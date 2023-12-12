@@ -1,0 +1,55 @@
+#game {
+  width: 600px;
+  height: 400px;
+  border-bottom: 1px solid silver;
+  margin: auto;
+  position: relative;
+}
+#dragon {
+  width: 30px;
+  height: 30px;
+  background-image: url('./images/dragon.png');
+  background-size: 30px 30px;
+  position: relative;
+  top: 369px;
+  left: 60px;
+}
+#cacktus {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 339px;
+  background-image: url('./images/cacktus.png');
+  background-size: 30px 30px;
+  left: 560px;
+  animation: cactusMov 3s infinite linear;
+}
+
+@keyframes cactusMov {
+  0% {
+    left: 560px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+.jump {
+  animation: jump 0.3s linear;
+}
+@keyframes jump {
+  0% {
+    top: 369px;
+  }
+  30% {
+    top: 309px;
+  }
+  50% {
+    top: 230px;
+  }
+  80% {
+    top: 309px;
+  }
+  100% {
+    top: 369px;
+  }
+}
