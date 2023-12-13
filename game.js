@@ -10,6 +10,7 @@ const jump = () => {
   }, 300)
 }
 document.addEventListener('keydown', () => jump())
+window.addEventListener('click', () => jump())
 count = 0
 let isActive = setInterval(() => {
   let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue('top'))
